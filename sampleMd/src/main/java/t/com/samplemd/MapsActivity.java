@@ -15,6 +15,8 @@ import static com.google.android.gms.maps.GoogleMap.MAP_TYPE_HYBRID;
 
 /**
  * Googleマップを使用したActivity
+ * 参考ページ
+ * https://qiita.com/outerlet/items/0d74061fa5d625a33dfb
  */
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 	
