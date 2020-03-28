@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- 自作 -->
+    <style name="MyTheme">
+
+
+    </style>
+
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_fragment_start_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="フラグメントサンプル"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- フラグメント表示ボタンA -->
+    <Button
+        android:id="@+id/fragment_A_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="480dp"
+        android:text="@string/fragmentA_key"/>
+
+    <!-- 戻るボタン -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:text="@string/back_key" />
+</RelativeLayout>
