@@ -21,12 +21,13 @@ public class FragmentStartUpActivity extends AppCompatActivity {
 	
 	String TAG = "FragmentStartUpActivity";
 	/**
-	 * フラグメントA遷移ボタン
+	 * 各ボタン生成
 	 */
+	//フラグメントA起動ボタン
 	Button fragmentAbutton;
-	/**
-	 * 戻るボタン
-	 */
+	//地図起動ボタン
+	Button mapButton;
+	//戻るボタン
 	Button backKeyButton;
 	
 	@Override
@@ -44,6 +45,17 @@ public class FragmentStartUpActivity extends AppCompatActivity {
 				
 				//フラグメントベースアクティビティを起動
 				Intent intent = new Intent(getApplication(), FragmentBaseActivity.class);
+				startActivityForResult(intent,REQEST_CODE);
+			}
+		});
+		
+		//地図ボタンの生成
+		mapButton = findViewById(R.id.map_fragment_button);
+		mapButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//Mapアクティビティを起動
+				Intent intent = new Intent(getApplication(),MapsActivity.class);
 				startActivityForResult(intent,REQEST_CODE);
 			}
 		});

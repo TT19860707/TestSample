@@ -1,0 +1,29 @@
+<resources>
+    <!--
+    参考資料：https://techacademy.jp/magazine/3582#sec2
+
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=B6:EE:98:7E:B2:6E:75:9B:F3:3E:AC:B3:4E:95:07:9A:EB:73:B7:6F%3Bt.com.samplemd
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    B6:EE:98:7E:B2:6E:75:9B:F3:3E:AC:B3:4E:95:07:9A:EB:73:B7:6F
+
+    SHA-1 certificate fingerprint:
+    B6:EE:98:7E:B2:6E:75:9B:F3:3E:AC:B3:4E:95:07:9A:EB:73:B7:6F
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+
+    認証情報
+    https://console.developers.google.com/apis/credentials?highlightKey=dba0e201-2c4a-4524-9eea-2a36eb8071f3&project=seismic-spot-272514
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBwR9Xqz91wmxDHU1LOqwjsckQS2LgNZ-U</string>
+</resources>
