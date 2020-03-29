@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -75,6 +76,21 @@ public class TopMainActivity extends AppCompatActivity {
 	}
 	@Override
 	public void onActivityResult(int requestCode , int resultCode, Intent data){
+		Log.d(TAG," requestCode :"+requestCode+" resultCode :"+resultCode+" data :"+data);
 		super.onActivityResult(requestCode,resultCode,data);
+	}
+	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event){
+		Log.d(TAG," KeyEvent :"+event);
+		
+		//戻るボタンが押された場合、アプリケーションを終了する
+		if(KeyEvent.KEYCODE_BACK == keyCode){
+			//APIレベル21で追加　アプリを終了させたい時に呼び出す。(タスクが終了される)
+			finishAndRemoveTask();
+		}
+		
+		//onKeyDown() の戻り値としてfalseを返すと、既定のBack処理がキャンセルされます。
+		return true;
 	}
 }
