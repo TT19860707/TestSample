@@ -16,5 +16,6 @@
     Once you have your key (it starts with "AIza"), replace the "google_maps_key"
     string in this file.
     -->
+    <!--TODO リリース用のAPIキーの設定が必要 -->
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBwR9Xqz91wmxDHU1LOqwjsckQS2LgNZ-U</string>
 </resources>
