@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- android:orientation="horizontal" == 横並べ　-->
+<!-- android:orientation="verticl"    == 縦並べ　-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+    <ImageView
+        android:id="@+id/imageitem"
+        android:layout_width="87dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:src="@drawable/fragment_a" />
+
+    <TextView
+        android:id="@+id/list_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -11,6 +11,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import t.com.samplemd.R;
+
 import static com.google.android.gms.maps.GoogleMap.MAP_TYPE_HYBRID;
 
 /**

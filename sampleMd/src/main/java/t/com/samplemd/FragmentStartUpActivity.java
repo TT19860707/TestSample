@@ -5,14 +5,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
 
-import t.com.samplemd.R;
 import t.com.samplemd.fragment.FragmentBaseActivity;
-import t.com.samplemd.fragment.SampleFragmentA;
 
 import static t.com.samplemd.TopMainActivity.REQEST_CODE;
 import static t.com.samplemd.TopMainActivity.RESULT_CODE;
@@ -25,8 +21,7 @@ public class FragmentStartUpActivity extends AppCompatActivity {
 	 */
 	//フラグメントA起動ボタン
 	Button fragmentAbutton;
-	//地図起動ボタン
-	Button mapButton;
+
 	//戻るボタン
 	Button backKeyButton;
 	
@@ -49,16 +44,6 @@ public class FragmentStartUpActivity extends AppCompatActivity {
 			}
 		});
 		
-		//地図ボタンの生成
-		mapButton = findViewById(R.id.map_fragment_button);
-		mapButton.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				//Mapアクティビティを起動
-				Intent intent = new Intent(getApplication(),MapsActivity.class);
-				startActivityForResult(intent,REQEST_CODE);
-			}
-		});
 		
 		//戻るボタン生成
 		backKeyButton = findViewById(R.id.back_button);

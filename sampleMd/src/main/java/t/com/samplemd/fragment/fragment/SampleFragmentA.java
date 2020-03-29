@@ -1,4 +1,4 @@
-package t.com.samplemd.fragment;
+package t.com.samplemd.fragment.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import t.com.samplemd.FragmentStartUpActivity;
 import t.com.samplemd.R;
+import t.com.samplemd.fragment.FragmentBaseActivity;
 
 public class SampleFragmentA extends Fragment {
 	

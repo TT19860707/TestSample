@@ -2,12 +2,12 @@ package t.com.samplemd.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import t.com.samplemd.R;
+import t.com.samplemd.fragment.fragment.SampleFragmentA;
 
 import static t.com.samplemd.TopMainActivity.RESULT_CODE;
 

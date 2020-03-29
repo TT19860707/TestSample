@@ -3,7 +3,7 @@
     <string name="app_name">SampleMd</string>
     <string name="activity_name_top">TOP MAIN ACTIVITY</string>
     <!-- ボタン表示 -->
-    <string name="button_next_fragment_sample">フラグメントサンプル</string>
+    <string name="button_next_fragment_sample">フラグメントサンプル、地図表示</string>
     <string name="fragmentA_key">FragmentA表示</string>
     <string name="back_key">戻る</string>
     <string name="map_fragment_key">Mapフラグメント</string>
