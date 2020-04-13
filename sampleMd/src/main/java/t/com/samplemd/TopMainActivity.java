@@ -1,8 +1,10 @@
 package t.com.samplemd;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -80,6 +82,7 @@ public class TopMainActivity extends AppCompatActivity {
 		super.onActivityResult(requestCode,resultCode,data);
 	}
 	
+	@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event){
 		Log.d(TAG," KeyEvent :"+event);
