@@ -1,0 +1,23 @@
+Activity
+
+public class TopMainActivity extends AppCompatActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.);
+
+	}
+
+	@Override
+	public void onActivityResult(int requestCode , int resultCode, Intent data){
+		super.onActivityResult(requestCode,resultCode,data);
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event){
+
+		return true;
+	}
+}

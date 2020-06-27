@@ -10,8 +10,11 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -32,10 +35,9 @@ public class TopMainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_top_main);
 		
-		
 		//ListViewに表示するリスト項目
 		ArrayList<ListDetail> detail = new ArrayList();
-		String[] s = {"フラグメントサンプル","地図表示","サンプル3","サンプル3","サンプル3"
+		String[] s = {"フラグメントサンプル","地図表示","GsonSample","サンプル3","サンプル3"
 				,"サンプル3","サンプル3","サンプル3","サンプル3","サンプル3","サンプル3","サンプル3"
 				,"サンプル3",};
 		for(String ss : s){
@@ -70,6 +72,8 @@ public class TopMainActivity extends AppCompatActivity {
 						startActivityForResult(intent1,REQEST_CODE);
 						break;
 					case 2:
+						//トースト表示
+						Toast.makeText(TopMainActivity.this,"GsonSample！",Toast.LENGTH_SHORT).show();
 						break;
 					default:
 				}
